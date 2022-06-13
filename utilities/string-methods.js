@@ -1,14 +1,3 @@
-let x = 5;
-let y = x ** 2;
-y = false;
-let arr = ["John", "Paul", "Peter"];
-
-// Function syntax
-// function name(parameter1, parameter2, parameter3) 
-// {
-//      code to be executed
-// }
-
 let word = "Hello";
 let wordLength = word.length;
 console.log(wordLength);
@@ -93,3 +82,60 @@ console.log(word6);
 let arrString = "Melon,Pear,Apple,Banana";
 let arr1 = arrString.split(",");
 console.log(arr1);
+
+// The charAt() method returns the character at a specified index (position) in a string
+let word7 = "HELLO WORLD";
+let char = word7.charAt(0);
+console.log(char);
+
+// The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:
+let word8 = "Please locate where 'locate' occurs!";
+console.log(word8.indexOf("locate"));
+// Returns -1 if it is not found 
+console.log(word8.indexOf("flower"));
+
+// The lastIndexOf() method returns the index of the last occurrence of a specified text in a string
+let word9= "Please locate where 'locate' occurs!";
+console.log(word9.lastIndexOf("locate"));
+
+// The search() method searches a string for a specified value and returns the position of the match
+let word10 = "Please locate where 'locate' occurs!";
+console.log(word10.search("locate"));
+
+// The match() method searches a string for a match against a regular expression, 
+// and returns the matches, as an Array object.
+let word11 = "The rain in SPAIN stays mainly in the plain";
+console.log(word11.match(/ain/g));
+// Perform a global, case-insensitive search for "ain"
+console.log(word11.match(/ain/gi));
+
+// The includes() method returns true if a string contains a specified value
+let word12 = "Hello world, welcome to the universe.";
+console.log(word12.includes("world"));
+
+// The startsWith() method returns true if a string begins with a specified value, otherwise false
+let word13 = "Hello world, welcome to the universe.";
+console.log(word13.startsWith("Hello"));
+
+// The endsWith() method returns true if a string ends with a specified value, otherwise false
+let word14 = "John Doe";
+console.log(word14.endsWith("Doe"));
+
+// String literals?
+let word15 =
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+
+let firstName = "John";
+let lastName = "Doe";
+
+let word16 = `Welcome ${firstName}, ${lastName}!`;
+console.log(word16);
+
+let price = 10;
+let VAT = 0.25;
+
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+console.log(total);
