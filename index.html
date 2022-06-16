@@ -7,13 +7,34 @@
     <link rel="stylesheet" href="styles/index.css">
     <!-- <script src="utilities/string-methods.js"></script> -->
     <!-- <script src="utilities/number-methods.js"></script> -->
-    <script src="utilities/array-methods.js"></script>
+    <!-- <script src="utilities/array-methods.js"></script> -->
+    
     
     <title>Javascript Review</title>
 </head>
 <body>
     <div class="container">
         <h1 id="heading-1">Javascript Review</h1>
+        <p id="text-1"></p>
+        <p id="text-2">Some text</p>
+        <p class="text-3">Oh look more text</p>
+        <p class="text-4"></p>
+        <input type="radio" id="mcdonalds" name="fast-food" value="mcdonalds">
+
+        <div id="main">
+            <p>Hello World</p>
+            <p>Hello World 2</p>
+        </div>
+
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)">
+            Mouse Over Me
+        </div>
+
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+         style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+            Click Me
+        </div>
     </div>
 </body>
+    <script src="utilities/dom-manipulation.js"></script>
 </html>
