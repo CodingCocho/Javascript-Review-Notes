@@ -170,12 +170,19 @@ console.log(abc);
 const fruits12 = ["Banana", "Orange", "Apple", "Mango"];
 const f = fruits12.entries();
 console.log(f);
-for (let xy of f) {
-    document.getElementById("demo").innerHTML += xy;
-  }
+// for (let xy of f) {
+//     document.getElementById("demo").innerHTML += xy;
+//   }
 
 //   ECMAScript 2016 introduced Array.includes() to arrays. 
 // This allows us to check if an element is present in an array (including NaN, unlike indexOf)
 const fruitsFuckMe = ["Banana", "Orange", "Apple", "Mango"];
 
 fruitsFuckMe.includes("Mango"); // is true
+
+let someNums = [1, 2, 3, 4, 5];
+for(let i = 0; i < someNums.length-1; i++)
+{
+    console.log("Regular " +  someNums[i]);
+    console.log("Nested? " + someNums[someNums[i]]);
+}
